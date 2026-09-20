@@ -345,15 +345,18 @@ img,svg{display:block}
 .context-stack span,.switch-item,.service-card{border-radius:12px}
 .service-card>span,.request-top>span,.quality-item{border-radius:10px}
 .service-catalog,.service-request,.bento{border-radius:var(--radius-lg)}
-.bento-context{background:radial-gradient(circle at 86% 76%,rgba(124,203,195,.28),transparent 38%),linear-gradient(145deg,rgba(18,183,164,.2),rgba(124,203,195,.1) 58%,var(--surface-solid));border-color:rgba(18,183,164,.3)}
-[data-theme="dark"] .bento-context{background:radial-gradient(circle at 86% 76%,rgba(124,203,195,.16),transparent 40%),linear-gradient(145deg,rgba(18,183,164,.24),rgba(29,58,95,.72) 62%,var(--surface-solid));border-color:rgba(124,203,195,.24)}
+.bento-context,[data-theme="dark"] .bento-context{color:#fff;background:radial-gradient(circle at 12% 25%,rgba(124,203,195,.32),transparent 25%),linear-gradient(135deg,#16b5a4 0%,#0d8f86 42%,#173a5d 100%);border-color:rgba(124,203,195,.28)}
+.bento-context small{color:#c5faf1}
+.bento-context p{color:#d9edeb}
+.bento-context li{color:#e9f8f6;background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.14)}
 .bento-context{min-height:430px;padding-block:30px}
-.bento-context .building-visual{height:315px;margin:-8px 0 -12px}
+.bento-context .building-visual{height:315px;margin:-8px 0 10px}
 .dash-window{border-radius:24px}
 .dash-sidebar,.dash-main{border-radius:18px}
 .dash-card,.dash-activity{border-radius:14px}
 .quality-shell,.cta-shell{border-radius:var(--radius-xl)}
 .accordion details{border-radius:12px}
+.steps:before{left:auto;right:42px;inset-inline-end:auto}
 
 @media (max-width:1020px){
   .scroll-cue{display:flex}
@@ -365,7 +368,8 @@ img,svg{display:block}
   .hero{padding-block-end:88px}
   .scroll-cue{inset-block-end:12px;font-size:12px}
   .scroll-cue i{height:28px}
+  .steps:before{left:auto;right:31px;inset-inline-end:auto}
   .bento-context{min-height:0;padding-block:24px 10px}
-  .bento-context .building-visual{height:185px;margin:8px 0 -2px}
+  .bento-context .building-visual{height:185px;margin:8px 0 12px}
   .service-card{min-height:80px}
 }

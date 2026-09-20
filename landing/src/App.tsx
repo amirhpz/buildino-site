@@ -202,15 +202,16 @@ function App() {
           <div className="hero-copy">
             <div className="hero-kicker"><span className="live-dot"/>مدیریت هوشمند ساختمان</div>
             <h1>زندگی بهتر،<br/><span>مجتمع هوشمندتر.</span></h1>
-            <p>بیلدینو، پلتفرم یکپارچه مدیریت ساختمان و خدمات مجتمع است؛ برای امور مالی شفاف، خدمات سریع‌تر و ارتباط ساده‌تر میان مدیر، مالک و ساکن.</p>
+            <p>بیلدینو، پلتفرم جامع مدیریت ساختمان و خدمات مجتمع است؛ برای زندگی منظم‌تر، امن‌تر و راحت‌تر و ارتباط ساده میان مدیر، مالک و ساکن.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#showcase">محصول را ببینید <Icon name="arrow" size={19}/></a>
               <a className="button button-ghost" href="#capabilities">چه کارهایی می‌کند؟</a>
             </div>
             <div className="hero-notes">
+              <span><Icon name="check" size={16}/>ساکنان خوشحال</span>
               <span><Icon name="check" size={16}/>مدیریت آسان</span>
               <span><Icon name="check" size={16}/>خدمات سریع</span>
-              <span><Icon name="check" size={16}/>شفافیت مالی</span>
+              <span><Icon name="check" size={16}/>ساختمان هوشمند</span>
             </div>
           </div>
         </div>
@@ -219,7 +220,7 @@ function App() {
 
       <section className="overview section" id="overview">
         <div className="container">
-          <SectionHead eyebrow="چرا بیلدینو؟" title={<>راهکاری مدرن برای<br/><em>مدیریت ساختمان و مجتمع‌ها</em></>} text="بیلدینو کارهای پراکنده ساختمان را در یک مسیر مشخص جمع می‌کند؛ از مدیریت واحدها و امور مالی تا خدمات، رزرو و ارتباط با ساکنان."/>
+          <SectionHead eyebrow="چرا بیلدینو؟" title={<>راهکاری مدرن برای<br/><em>مدیریت ساختمان و مجتمع‌ها</em></>} text="بیلدینو با ترکیب فناوری و خدمات حرفه‌ای، کارهای پراکنده ساختمان را در یک مسیر مشخص جمع می‌کند؛ نتیجه، صرفه‌جویی در زمان و هزینه، شفافیت بیشتر و افزایش ارزش ساختمان است."/>
           <div className="overview-grid">
             <Reveal className="overview-story">
               <div className="story-number">۰۱</div>
@@ -245,7 +246,7 @@ function App() {
           <SectionHead center eyebrow="امکانات بیلدینو" title={<>از شارژ ماهانه تا رزرو سالن؛<br/><em>همه‌چیز در یک اپلیکیشن</em></>} text="امکانات هر کاربر به ساختمان، واحد و سطح دسترسی او بستگی دارد؛ بنابراین هرکس دقیقاً بخش‌هایی را می‌بیند که برای او فعال شده‌اند."/>
           <div className="bento-grid">
             <Reveal className="bento bento-context">
-              <div className="bento-copy"><span className="bento-icon"><Icon name="building"/></span><small>ساختمان و ساکنان</small><h3>همه واحدها، با دسترسی مخصوص خودشان</h3><p>ساختمان‌ها، بلوک‌ها و واحدهای مرتبط را ببینید و اطلاعات مالک، مستأجر یا ساکن را بدون قاطی‌شدن داده‌ها مدیریت کنید.</p><ul><li>پنل مدیر، مالک و ساکن</li><li>اطلاعات مستقل هر واحد</li><li>اسناد و دسترسی‌های مرتبط</li></ul></div>
+              <div className="bento-copy"><span className="bento-icon"><Icon name="building"/></span><small>همه اطلاعات، در یک نگاه</small><h3>همه واحدها، با دسترسی مخصوص خودشان</h3><p>ساختمان‌ها، بلوک‌ها و واحدهای مرتبط را ببینید و اطلاعات مالک، مستأجر یا ساکن را بدون قاطی‌شدن داده‌ها مدیریت کنید؛ ساختمان شما در دستان شماست.</p><ul><li>پنل مدیر، مالک و ساکن</li><li>اطلاعات مستقل هر واحد</li><li>اسناد و دسترسی‌های مرتبط</li></ul></div>
               <div className="building-visual" aria-hidden="true"><img src="/images/buildings.png" alt=""/></div>
             </Reveal>
             <Reveal className="bento bento-finance" delay={100}>
@@ -276,7 +277,7 @@ function App() {
                 <article className="service-card"><span><Icon name="calendar"/></span><div><h4>سرویس و بازرسی دوره‌ای</h4><p>چک‌لیست، برنامه پیشگیرانه و کنترل زمان‌بندی پیمانکاران</p></div><Icon name="chevron" size={18}/></article>
                 <article className="service-card"><span><Icon name="layers"/></span><div><h4>نظافت، محوطه و بازسازی</h4><p>نظافت ساختمان، فضای سبز، محوطه و خدمات بازسازی</p></div><Icon name="chevron" size={18}/></article>
               </div>
-              <p className="service-note"><Icon name="check" size={17}/> خدمات قابل انتخاب، از جمله درخواست‌های فوری، براساس امکانات و تأمین‌کنندگان موردتأیید هر ساختمان نمایش داده می‌شوند.</p>
+              <p className="service-note"><Icon name="check" size={17}/> خدمات فوری ۲۴/۷ و سایر سرویس‌ها براساس امکانات و پیمانکاران موردتأیید هر ساختمان ارائه می‌شوند؛ ثبت درخواست، پیگیری لحظه‌ای و کیفیت تضمین‌شده.</p>
             </Reveal>
             <Reveal className="service-request" delay={100}>
               <div className="request-top"><span><Icon name="tool" size={20}/></span><div><small>درخواست خدمات</small><b>بررسی نشتی لوله آشپزخانه</b></div><em>در حال بررسی</em></div>
@@ -301,8 +302,8 @@ function App() {
               <div className="dash-sidebar"><Logo/><nav aria-label="بخش‌های محصول"><span className="active"><Icon name="unit" size={18}/>خانه من</span><span><Icon name="wallet" size={18}/>صورتحساب‌ها</span><span><Icon name="activity" size={18}/>درخواست‌ها</span></nav><div className="side-profile"><i>م</i><div><b>مریم احمدی</b><small>ساکن واحد ۲۱</small></div></div></div>
               <div className="dash-main">
                 <div className="dash-top"><div><small>سلام مریم</small><h3>خانه من</h3></div><button type="button"><Icon name="building" size={18}/><span>ساختمان سرو · واحد ۲۱</span><Icon name="chevron" size={16}/></button></div>
-                <div className="dash-cards"><div className="dash-card hero-card"><small>صورتحساب جدید</small><h4>شارژ شهریور واحد ۲۱</h4><p>جزئیات مبلغ و تاریخ سررسید را ببینید</p><span><i/>در انتظار پرداخت</span><div className="card-wave"/></div><div className="dash-card status-card"><small>کیف پول</small><div className="status-ring"><span>مشاهده<br/>تراکنش‌ها</span></div><b>اعتبار و سابقه مالی</b></div></div>
-                <div className="dash-activity"><div><h4>آخرین اعلان‌ها</h4><span>دیدن همه</span></div><ul><li><i><Icon name="wallet" size={17}/></i><span><b>شارژ جدید صادر شد</b><small>صورتحساب شهریور واحد ۲۱</small></span><em>امروز</em></li><li><i><Icon name="activity" size={17}/></i><span><b>پشتیبانی پاسخ داد</b><small>درخواست بررسی تأسیسات</small></span><em>دیروز</em></li><li><i><Icon name="layers" size={17}/></i><span><b>رزرو شما ثبت شد</b><small>سالن اجتماعات</small></span><em>شنبه</em></li></ul></div>
+                <div className="dash-cards"><div className="dash-card hero-card"><small>پرداخت موفق</small><h4>شارژ شهریور واحد ۲۱</h4><p>از همراهی شما سپاسگزاریم</p><span><i/>مدیریت مالی شفاف، اعتماد بیشتر</span><div className="card-wave"/></div><div className="dash-card status-card"><small>کیف پول</small><div className="status-ring"><span>مشاهده<br/>تراکنش‌ها</span></div><b>اعتبار و سابقه مالی</b></div></div>
+                <div className="dash-activity"><div><h4>آخرین اعلان‌ها</h4><span>دیدن همه</span></div><ul><li><i><Icon name="wallet" size={17}/></i><span><b>شارژ جدید صادر شد</b><small>صورتحساب شهریور واحد ۲۱</small></span><em>امروز</em></li><li><i><Icon name="activity" size={17}/></i><span><b>پشتیبانی پاسخ داد</b><small>درخواست بررسی تأسیسات</small></span><em>دیروز</em></li><li><i><Icon name="layers" size={17}/></i><span><b>اطلاعیه جدید</b><small>جلسه مجمع این هفته برگزار می‌شود</small></span><em>شنبه</em></li></ul></div>
               </div>
             </div>
             <div className="concept-label"><Icon name="layers" size={15}/>کارهای واحد ۲۱، در یک صفحه</div>
@@ -338,7 +339,7 @@ function App() {
 
       <section className="quality section">
         <div className="container quality-shell">
-          <Reveal className="quality-copy"><Eyebrow>نگهداری و بهره‌برداری</Eyebrow><h2>عملکرد بهتر،<br/><em>عمر بیشتر ساختمان</em></h2><p>مدیر ساختمان می‌تواند سرویس‌های دوره‌ای، تجهیزات، سوابق تعمیرات و کار پیمانکاران را منظم‌تر ثبت و پیگیری کند.</p></Reveal>
+          <Reveal className="quality-copy"><Eyebrow>نگهداری و بهره‌برداری</Eyebrow><h2>عملکرد بهتر،<br/><em>عمر بیشتر ساختمان</em></h2><p>مدیر ساختمان می‌تواند سرویس‌های دوره‌ای، تجهیزات، سوابق تعمیرات و کار پیمانکاران را منظم‌تر ثبت و پیگیری کند؛ نگهداری هوشمند برای ساختمانی مطمئن.</p></Reveal>
           <div className="quality-list">
             <Reveal className="quality-item" delay={60}><Icon name="calendar"/><div><b>سرویس‌های دوره‌ای</b><small>برنامه‌ریزی و یادآوری نگهداری</small></div></Reveal>
             <Reveal className="quality-item" delay={110}><Icon name="building"/><div><b>مدیریت تجهیزات</b><small>سوابق تعمیرات و وضعیت دارایی‌ها</small></div></Reveal>
@@ -368,7 +369,7 @@ function App() {
         <div className="container">
           <Reveal className="cta-shell">
             <div className="cta-building" aria-hidden="true"><img src="/images/building-with-shadow.png" alt=""/></div>
-            <div className="cta-copy"><Eyebrow>فراتر از یک اپلیکیشن</Eyebrow><h2>ساختمان هوشمند،<br/>آینده روشن‌تر</h2><p>بیلدینو امور مالی، خدمات و ارتباط با مدیریت را یک‌جا جمع می‌کند و برای خدمات ویژه مانند بیمه ساختمان و خودرو، پرداخت‌های منعطف و نسخه سازمانی مجتمع‌های بزرگ آماده توسعه است.</p><div><a href="#showcase" className="button button-light">داخل محصول را ببینید <Icon name="arrow" size={19}/></a><a href="#capabilities" className="cta-link">امکانات بیلدینو</a></div></div>
+            <div className="cta-copy"><Eyebrow>فراتر از یک اپلیکیشن</Eyebrow><h2>ساختمان هوشمند،<br/>آینده روشن‌تر</h2><p>خرید بیمه ساختمان و خودرو، پرداخت اقساطی و تسهیلات، همکاری با پیمانکاران تأییدشده و نسخه سازمانی مجتمع‌های بزرگ، مسیر توسعه خدمات آینده بیلدینو را می‌سازند.</p><div><a href="#showcase" className="button button-light">داخل محصول را ببینید <Icon name="arrow" size={19}/></a><a href="#capabilities" className="cta-link">امکانات بیلدینو</a></div></div>
           </Reveal>
         </div>
       </section>
