@@ -1,4 +1,23 @@
 ---
 deployment:
   tasks:
-    - /bin/echo "Buildino deploy works"
+    - /bin/mkdir -p /home/h426910/buildino
+    - /bin/mkdir -p /home/h426910/public_html
+
+    - /bin/cp -R app /home/h426910/buildino/
+    - /bin/cp -R bootstrap /home/h426910/buildino/
+    - /bin/cp -R config /home/h426910/buildino/
+    - /bin/cp -R database /home/h426910/buildino/
+    - /bin/cp -R resources /home/h426910/buildino/
+    - /bin/cp -R routes /home/h426910/buildino/
+    - /bin/cp -R storage /home/h426910/buildino/
+
+    - /bin/cp artisan /home/h426910/buildino/
+    - /bin/cp composer.json /home/h426910/buildino/
+    - /bin/cp composer.lock /home/h426910/buildino/
+
+    - /bin/cp -R public/. /home/h426910/public_html/
+    - /bin/cp deploy/parspack/public-index.php /home/h426910/public_html/index.php
+
+    - cd /home/h426910/buildino && composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+    - cd /home/h426910/buildino && php artisan optimize
