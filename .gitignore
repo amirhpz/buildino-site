@@ -1,8 +1,12 @@
 # Dependencies
 node_modules/
+vendor/
 
 # Build output
 dist/
+public/hot
+public/storage
+release/
 
 # Vite caches
 .vite/
@@ -12,6 +16,10 @@ dist/
 .env
 .env.*
 !.env.example
+.phpunit.cache/
+.phpunit.result.cache
+storage/*.key
+storage/pail/
 
 # Editor and operating-system files
 .idea/
