@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - cd /home/h426910/repositories/buildino-website && composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+    - cd /home/h426910/repositories/buildino-website && php artisan optimize
