@@ -10,6 +10,7 @@
         <meta property="og:title" content="بیلدینو | همه کارهای ساختمان در یک اپلیکیشن">
         <meta property="og:description" content="از شارژ و صورتحساب تا خدمات، رزرو، مهمانان و پشتیبانی؛ کارهای واحدتان را آنلاین مدیریت کنید.">
         <meta property="og:type" content="website">
+        <link rel="icon" type="image/png" href="{{ asset('images/logo/brand-color.png') }}">
         <title>بیلدینو | مدیریت امور ساختمان و واحد</title>
         <script src="{{ asset('theme-init.js') }}"></script>
         @viteReactRefresh

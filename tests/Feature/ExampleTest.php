@@ -9,6 +9,9 @@ class ExampleTest extends TestCase
 {
     public function test_the_landing_page_is_available(): void
     {
+        $this->assertFileExists(public_path('images/logo/brand-color.png'));
+        $this->assertFileExists(public_path('images/logo/brand-white.png'));
+
         $response = $this->get('/');
 
         $response

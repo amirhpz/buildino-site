@@ -26,8 +26,11 @@ function Icon({ name, size = 22 }: { name: IconName; size?: number }) {
 
 function Logo() {
   return <a className="logo" href="#top" aria-label="بیلدینو، صفحه نخست">
-    <span className="logo-mark" aria-hidden="true"><i /><i /><i /></span>
-    <span>بیلدینو</span>
+    <span className="logo-symbol" aria-hidden="true">
+      <img className="logo-symbol-color" src="/images/logo/brand-color.png" alt="" />
+      <img className="logo-symbol-white" src="/images/logo/brand-white.png" alt="" />
+    </span>
+    <span className="logo-label">بیلدینو</span>
   </a>
 }
 
